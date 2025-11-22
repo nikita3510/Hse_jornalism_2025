@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d6a9a4110546b751f3691d683f93a28 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9d6a9a4110546b751f3691d683f93a28" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9d6a9a4110546b751f3691d683f93a28 = L.map(
+                "map_9d6a9a4110546b751f3691d683f93a28",
+                {
+                    center: [55.0, 50.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_00869b33d89c12f1df36dfe2f142de93 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_00869b33d89c12f1df36dfe2f142de93.addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var marker_3f2ac4b4fc21dac25e6f42a8f75851f2 = L.marker(
+                [54.193, 37.6173],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_3bf1c30d00e9122488925a91b14c2d92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_963186ae2ddfefd171a079145a095f25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88e7ad03444f2e917763608baf247ef4 = $(`<div id="html_88e7ad03444f2e917763608baf247ef4" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Тульская обл.</b><br>         Haval Motor Manufacturing Rus<br>         <b>Производство:</b> Haval<br>         <b>Бренд:</b> Китай     </div>     </div>`)[0];
+                popup_963186ae2ddfefd171a079145a095f25.setContent(html_88e7ad03444f2e917763608baf247ef4);
+            
+        
+
+        marker_3f2ac4b4fc21dac25e6f42a8f75851f2.bindPopup(popup_963186ae2ddfefd171a079145a095f25)
+        ;
+
+        
+    
+    
+                marker_3f2ac4b4fc21dac25e6f42a8f75851f2.setIcon(icon_3bf1c30d00e9122488925a91b14c2d92);
+            
+    
+            var marker_a56bf0942b81e917d57b5cb92b4f0a4a = L.marker(
+                [54.7104, 20.4522],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_047899c0f9792d91f2a1e5846be796ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_483034d32426e93272e5e9c9f7e22f13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3c9b3c04e64ce3cb1a1e432676bd452 = $(`<div id="html_f3c9b3c04e64ce3cb1a1e432676bd452" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Калининград</b><br>         Автотор<br>         <b>Производство:</b> Amberauto, BAIC, Kaiyi, SWM<br>         <b>Бренд:</b> Китай     </div>     </div>`)[0];
+                popup_483034d32426e93272e5e9c9f7e22f13.setContent(html_f3c9b3c04e64ce3cb1a1e432676bd452);
+            
+        
+
+        marker_a56bf0942b81e917d57b5cb92b4f0a4a.bindPopup(popup_483034d32426e93272e5e9c9f7e22f13)
+        ;
+
+        
+    
+    
+                marker_a56bf0942b81e917d57b5cb92b4f0a4a.setIcon(icon_047899c0f9792d91f2a1e5846be796ea);
+            
+    
+            var marker_171db2b1739de30d3968b2b3fa05d7ac = L.marker(
+                [55.7558, 37.6173],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_5a886b60a6560168aa308e19dce18e02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c9cac185cebb3ae741471de50b779ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31dc0423e0394f58be2fb619e47ad2a7 = $(`<div id="html_31dc0423e0394f58be2fb619e47ad2a7" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Москва</b><br>         Московский автозавод (бывш. Renault)<br>         <b>Производство:</b> Москвич (JAC), Atom<br>         <b>Бренд:</b> Китай     </div>     </div>`)[0];
+                popup_8c9cac185cebb3ae741471de50b779ce.setContent(html_31dc0423e0394f58be2fb619e47ad2a7);
+            
+        
+
+        marker_171db2b1739de30d3968b2b3fa05d7ac.bindPopup(popup_8c9cac185cebb3ae741471de50b779ce)
+        ;
+
+        
+    
+    
+                marker_171db2b1739de30d3968b2b3fa05d7ac.setIcon(icon_5a886b60a6560168aa308e19dce18e02);
+            
+    
+            var marker_030444cd6c4edbcad72156b512a1ac9e = L.marker(
+                [54.5136, 36.2614],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_5a8a13fe291ecaa8e33b51e5314adf3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbe45327fdb7bd13ef683180ea81d0ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e57722bcdbbeef2933960a64fb8a323a = $(`<div id="html_e57722bcdbbeef2933960a64fb8a323a" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Калуга</b><br>         Завод “Автомобильные технологии” (ex-PSMA)<br>         <b>Производство:</b> Haval, ранее Citroen<br>         <b>Бренд:</b> Китай/Франция     </div>     </div>`)[0];
+                popup_dbe45327fdb7bd13ef683180ea81d0ca.setContent(html_e57722bcdbbeef2933960a64fb8a323a);
+            
+        
+
+        marker_030444cd6c4edbcad72156b512a1ac9e.bindPopup(popup_dbe45327fdb7bd13ef683180ea81d0ca)
+        ;
+
+        
+    
+    
+                marker_030444cd6c4edbcad72156b512a1ac9e.setIcon(icon_5a8a13fe291ecaa8e33b51e5314adf3b);
+            
+    
+            var marker_639e0b3f08e52ff02ff40eed4bf47ced = L.marker(
+                [54.5333, 36.2667],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_41542811cb04d36d727440e5f8c9cc33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e6048dbdcbd6be1e8323b9e8d9ca29b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41a740fa166b624bbbed46cc66da80fc = $(`<div id="html_41a740fa166b624bbbed46cc66da80fc" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Калуга</b><br>         Экс-завод Volkswagen (Tenet)<br>         <b>Производство:</b> Tenet (JAC)<br>         <b>Бренд:</b> Китай     </div>     </div>`)[0];
+                popup_0e6048dbdcbd6be1e8323b9e8d9ca29b.setContent(html_41a740fa166b624bbbed46cc66da80fc);
+            
+        
+
+        marker_639e0b3f08e52ff02ff40eed4bf47ced.bindPopup(popup_0e6048dbdcbd6be1e8323b9e8d9ca29b)
+        ;
+
+        
+    
+    
+                marker_639e0b3f08e52ff02ff40eed4bf47ced.setIcon(icon_41542811cb04d36d727440e5f8c9cc33);
+            
+    
+            var marker_747b6adc88a986036bcff6cd5c842e68 = L.marker(
+                [59.9311, 30.3609],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_65d7e257a1003d43438ea596bcbbaee9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8dbda8ea3aed5c549b5fcb91360c90c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3654033c82de482b2964e20d149b04fb = $(`<div id="html_3654033c82de482b2964e20d149b04fb" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Санкт-Петербург</b><br>         Ex-Nissan (Xcite/Lada Iskra)<br>         <b>Производство:</b> Xcite, Lada Iskra<br>         <b>Бренд:</b> Китай/Россия     </div>     </div>`)[0];
+                popup_c8dbda8ea3aed5c549b5fcb91360c90c.setContent(html_3654033c82de482b2964e20d149b04fb);
+            
+        
+
+        marker_747b6adc88a986036bcff6cd5c842e68.bindPopup(popup_c8dbda8ea3aed5c549b5fcb91360c90c)
+        ;
+
+        
+    
+    
+                marker_747b6adc88a986036bcff6cd5c842e68.setIcon(icon_65d7e257a1003d43438ea596bcbbaee9);
+            
+    
+            var marker_03102dd469884ea640e52f6f299f781d = L.marker(
+                [59.85, 30.25],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_5c0d1b3e6dc7a0c1ef173e699a250b0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a32da499189b04671b26d2a586e86e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90a7ce5c04cbb5609b32f4cb6ef142ba = $(`<div id="html_90a7ce5c04cbb5609b32f4cb6ef142ba" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Санкт-Петербург</b><br>         Ex-General Motors<br>         <b>Производство:</b> Jaecoo (J7, J8)<br>         <b>Бренд:</b> Китай     </div>     </div>`)[0];
+                popup_9a32da499189b04671b26d2a586e86e7.setContent(html_90a7ce5c04cbb5609b32f4cb6ef142ba);
+            
+        
+
+        marker_03102dd469884ea640e52f6f299f781d.bindPopup(popup_9a32da499189b04671b26d2a586e86e7)
+        ;
+
+        
+    
+    
+                marker_03102dd469884ea640e52f6f299f781d.setIcon(icon_5c0d1b3e6dc7a0c1ef173e699a250b0d);
+            
+    
+            var marker_df9c5ea97268c2b2e34c749bf8d4469a = L.marker(
+                [43.1155, 131.8855],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_7b0c797d812e7eb0593e13f0cf70b753 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_812f418a26edb7375a0284881f78af1f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a46fc57cf42bedd828a1ef19dd86bfd = $(`<div id="html_3a46fc57cf42bedd828a1ef19dd86bfd" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Владивосток, Ульяновск, др.</b><br>         Sollers<br>         <b>Производство:</b> JAC, Sollers<br>         <b>Бренд:</b> Китай/Россия     </div>     </div>`)[0];
+                popup_812f418a26edb7375a0284881f78af1f.setContent(html_3a46fc57cf42bedd828a1ef19dd86bfd);
+            
+        
+
+        marker_df9c5ea97268c2b2e34c749bf8d4469a.bindPopup(popup_812f418a26edb7375a0284881f78af1f)
+        ;
+
+        
+    
+    
+                marker_df9c5ea97268c2b2e34c749bf8d4469a.setIcon(icon_7b0c797d812e7eb0593e13f0cf70b753);
+            
+    
+            var marker_acdbed0f257572e02c422ad3bf9568e3 = L.marker(
+                [52.6088, 39.5992],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_76b35cf28018620cc7a0220a19e4f83e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cd769d4fa402728b1d406c8656a7f87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_528c1dc69922f0391681e51d34823561 = $(`<div id="html_528c1dc69922f0391681e51d34823561" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Липецк</b><br>         Evolute (Motorinvest)<br>         <b>Производство:</b> Evolute (Dongfeng)<br>         <b>Бренд:</b> Китай     </div>     </div>`)[0];
+                popup_5cd769d4fa402728b1d406c8656a7f87.setContent(html_528c1dc69922f0391681e51d34823561);
+            
+        
+
+        marker_acdbed0f257572e02c422ad3bf9568e3.bindPopup(popup_5cd769d4fa402728b1d406c8656a7f87)
+        ;
+
+        
+    
+    
+                marker_acdbed0f257572e02c422ad3bf9568e3.setIcon(icon_76b35cf28018620cc7a0220a19e4f83e);
+            
+    
+            var marker_e7951b110ae82bc7c6eaed336cdd6681 = L.marker(
+                [59.9, 30.35],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_42b408cc401a2d22f62f9355e6e24635 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfa7a91f7dec900598023c2a7c1b1f44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da9079509bcd2e216b8b7a3aa6239121 = $(`<div id="html_da9079509bcd2e216b8b7a3aa6239121" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Санкт-Петербург</b><br>         Лифаново (ex-Toyota, “Соллерс-Бизнес Кар”)<br>         <b>Производство:</b> Новые бренды (JAC/Sollers)<br>         <b>Бренд:</b> Китай     </div>     </div>`)[0];
+                popup_dfa7a91f7dec900598023c2a7c1b1f44.setContent(html_da9079509bcd2e216b8b7a3aa6239121);
+            
+        
+
+        marker_e7951b110ae82bc7c6eaed336cdd6681.bindPopup(popup_dfa7a91f7dec900598023c2a7c1b1f44)
+        ;
+
+        
+    
+    
+                marker_e7951b110ae82bc7c6eaed336cdd6681.setIcon(icon_42b408cc401a2d22f62f9355e6e24635);
+            
+    
+            var marker_d4b14bf31feba12c611457a1643d8e9d = L.marker(
+                [43.2, 131.9],
+                {
+}
+            ).addTo(map_9d6a9a4110546b751f3691d683f93a28);
+        
+    
+            var icon_cf7182a6f1ebf33c0c4cacf778704009 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e6136ce9b45b4ee64aa85957f30ac0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ecb3dce241f5c71254a4644fea118c41 = $(`<div id="html_ecb3dce241f5c71254a4644fea118c41" style="width: 100.0%; height: 100.0%;">     <div style='color:black; font-size:13px;'>         <b>Владивосток</b><br>         Ex-Mazda (Sollers)<br>         <b>Производство:</b> Sollers, JAC<br>         <b>Бренд:</b> Китай     </div>     </div>`)[0];
+                popup_8e6136ce9b45b4ee64aa85957f30ac0d.setContent(html_ecb3dce241f5c71254a4644fea118c41);
+            
+        
+
+        marker_d4b14bf31feba12c611457a1643d8e9d.bindPopup(popup_8e6136ce9b45b4ee64aa85957f30ac0d)
+        ;
+
+        
+    
+    
+                marker_d4b14bf31feba12c611457a1643d8e9d.setIcon(icon_cf7182a6f1ebf33c0c4cacf778704009);
+            
+</script>
+</html>
